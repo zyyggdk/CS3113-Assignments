@@ -1,0 +1,9 @@
+﻿  main.cpp
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 2\nyucodebase\nyucodebase\main.cpp(125): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 2\nyucodebase\nyucodebase\main.cpp(145): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 2\nyucodebase\nyucodebase\main.cpp(147): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 2\nyucodebase\nyucodebase\main.cpp(148): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 2\nyucodebase\nyucodebase\main.cpp(183): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 2\nyucodebase\nyucodebase\main.cpp(242): warning C4018: '<': signed/unsigned mismatch
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 2\nyucodebase\nyucodebase\main.cpp(253): warning C4018: '<': signed/unsigned mismatch
+  NYUCodebase.vcxproj -> C:\Users\Administrator\OneDrive\Undergraduate\Sophomore\Semester 2\CS-UY 3113 Game Programming\CS3113-Assignments\Assignment 2\NYUCodebase\Debug\NYUCodebase.exe
