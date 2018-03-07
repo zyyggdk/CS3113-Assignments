@@ -121,14 +121,88 @@ public:
 			this->x + this->width / 2 < other->x - other->width / 2
 			);
 	}
-};class Board : public Entity {private:	GLfloat units_a_second = 1;public:	Board(GLfloat width, GLfloat height, GLfloat x, GLfloat y) :		Entity(width, height, x, y) {	}	void Update(GLfloat elapsed, GLboolean ifUp) {		if (ifUp) {			Entity::Move(0, elapsed * units_a_second);		}		else {			Entity::Move(0, -elapsed * units_a_second);		}		Entity::Update();	}};class Ball : public Entity {private:	GLfloat velocity_x;
-	GLfloat velocity_y;	GLfloat default_velocity_x;
-	GLfloat default_velocity_y;public:	Ball(GLfloat width, GLfloat height, GLfloat x, GLfloat y,		GLfloat velocity_x, GLfloat velocity_y) :		Entity(width, height, x, y),		velocity_x(velocity_x), velocity_y(velocity_y), 		default_velocity_x(velocity_x), default_velocity_y(velocity_y) {	}	void Update(GLfloat elapsed, std::vector<Entity*>& entities) {		if (Entity::getY() + Entity::getHeight() / 2 >= 2 || Entity::getY() - Entity::getHeight() / 2 <= -2)			velocity_y = -velocity_y;		if (CheckCollision(entities)) {			velocity_x = -velocity_x;		}		Entity::Move(elapsed * velocity_x, elapsed * velocity_y);		Entity::Update();	}	void Reset() {		Entity::Reset();	}	void ResetDefault() {		Entity::ResetDefault();		velocity_x = default_velocity_x;		velocity_y = default_velocity_y;	}	GLboolean CheckCollision(std::vector<Entity*>& entities) {		for (int i = 0; i < entities.capacity(); ++i) {
+};
+
+class Board : public Entity {
+private:
+	GLfloat units_a_second = 1;
+public:
+	Board(GLfloat width, GLfloat height, GLfloat x, GLfloat y) :
+		Entity(width, height, x, y) {
+
+	}
+
+	void Update(GLfloat elapsed, GLboolean ifUp) {
+		if (ifUp) {
+			Entity::Move(0, elapsed * units_a_second);
+		}
+		else {
+			Entity::Move(0, -elapsed * units_a_second);
+		}
+		Entity::Update();
+	}
+};
+
+class Ball : public Entity {
+private:
+	GLfloat velocity_x;
+	GLfloat velocity_y;
+
+	GLfloat default_velocity_x;
+	GLfloat default_velocity_y;
+
+public:
+	Ball(GLfloat width, GLfloat height, GLfloat x, GLfloat y,
+		GLfloat velocity_x, GLfloat velocity_y) :
+		Entity(width, height, x, y),
+		velocity_x(velocity_x), velocity_y(velocity_y), 
+		default_velocity_x(velocity_x), default_velocity_y(velocity_y) {
+
+	}
+
+	void Update(GLfloat elapsed, std::vector<Entity*>& entities) {
+		if (Entity::getY() + Entity::getHeight() / 2 >= 2 || Entity::getY() - Entity::getHeight() / 2 <= -2)
+			velocity_y = -velocity_y;
+		if (CheckCollision(entities)) {
+			velocity_x = -velocity_x;
+		}
+		Entity::Move(elapsed * velocity_x, elapsed * velocity_y);
+		Entity::Update();
+	}
+
+	void Reset() {
+		Entity::Reset();
+	}
+
+	void ResetDefault() {
+		Entity::ResetDefault();
+		velocity_x = default_velocity_x;
+		velocity_y = default_velocity_y;
+	}
+
+	GLboolean CheckCollision(std::vector<Entity*>& entities) {
+		for (int i = 0; i < entities.capacity(); ++i) {
 			if (entities[i] != this) {
 				if (Entity::CheckCollision(entities[i]))
 					return true;
 			}
-		}		return false;	}	GLboolean CheckWin() {		if (Entity::getX() > 3.55) {			std::cout << "Player 1 wins!" << std::endl;			return true;		}					if (Entity::getX() < -3.55) {			std::cout << "Player 2 wins!" << std::endl;			return true;		}		return false;	}};
+		}
+		return false;
+	}
+
+	GLboolean CheckWin() {
+		if (Entity::getX() > 3.55) {
+			std::cout << "Player 1 wins!" << std::endl;
+			return true;
+		}
+			
+		if (Entity::getX() < -3.55) {
+			std::cout << "Player 2 wins!" << std::endl;
+			return true;
+		}
+		return false;
+	}
+};
 
 //Pong
 
@@ -281,4 +355,4 @@ GLuint LoadTexture(const char *filePath) {
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	stbi_image_free(image);
 	return retTexture;
-}
+}

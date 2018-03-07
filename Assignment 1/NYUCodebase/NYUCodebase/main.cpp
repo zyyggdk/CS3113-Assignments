@@ -39,7 +39,8 @@ int main(int argc, char *argv[])
 
 	program.Load(RESOURCE_FOLDER"vertex.glsl", RESOURCE_FOLDER"fragment.glsl");
 	
-	programTextured.Load(RESOURCE_FOLDER"vertex_textured.glsl", RESOURCE_FOLDER"fragment_textured.glsl");
+	programTextured.Load(RESOURCE_FOLDER"vertex_textured.glsl", RESOURCE_FOLDER"fragment_textured.glsl");
+
 	GLuint emojiTexture1 = LoadTexture(RESOURCE_FOLDER"emoji1.png");
 	GLuint emojiTexture2 = LoadTexture(RESOURCE_FOLDER"emoji2.png");
 	GLuint emojiTexture3 = LoadTexture(RESOURCE_FOLDER"emoji3.png");

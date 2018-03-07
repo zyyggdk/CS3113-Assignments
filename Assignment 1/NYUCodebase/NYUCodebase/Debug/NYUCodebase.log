@@ -1,3 +1,20 @@
-﻿  main.cpp
-c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113\project_template\windows\nyucodebase\nyucodebase\main.cpp(51): warning C4305: 'argument': truncation from 'double' to 'float'
-  NYUCodebase.vcxproj -> C:\Users\Administrator\OneDrive\Undergraduate\Sophomore\Semester 2\CS-UY 3113 Game Programming\CS3113\project_template\Windows\NYUCodebase\Debug\NYUCodebase.exe
+﻿  ShaderProgram.cpp
+  Matrix.cpp
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(148): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(149): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(150): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(151): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(165): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(166): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(167): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(168): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(172): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(173): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(174): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(175): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(213): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\matrix.cpp(214): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+c:\users\administrator\onedrive\undergraduate\sophomore\semester 2\cs-uy 3113 game programming\cs3113-assignments\assignment 1\nyucodebase\nyucodebase\main.cpp(52): warning C4305: 'argument': truncation from 'double' to 'float'
+  Generating Code...
+  NYUCodebase.vcxproj -> C:\Users\Administrator\OneDrive\Undergraduate\Sophomore\Semester 2\CS-UY 3113 Game Programming\CS3113-Assignments\Assignment 1\NYUCodebase\Debug\NYUCodebase.exe
